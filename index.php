@@ -9,15 +9,9 @@
 					<div class="panel-body">
 						<dl>
 							<dt>E-Mail</dt>
-							<dd>dn42@tbspace.de</dd>
-							<dt>PGP-Fingerprint</dt>
-							<dd>3A69 E9AF 3FA9 3BCF FE50 9694 494E 2F56 C304 60E1</dd>
-							<dt>PGP-ID</dt>
-							<dd>0xC30460E1</dd>
-							<dt>XMPP</dt>
-							<dd>tobi31061@tbspace.de</dd>
+							<dd>info@kilobyte.ch</dd>
 							<dt>IRC</dt>
-							<dd>manawyrm@hackint</dd>
+							<dd>kilobyte@hackint</dd>
 						</dl>
 						<br/><br/>
 					</div>
@@ -29,17 +23,17 @@
 					<div class="panel-body">
 						<dl>
 							<dt>Location</dt>
-							<dd>Falkenstein, Germany - Hetzner RZ17</dd>
-							<dt>Remote (IPv4/IPv6)</dt>
-							<dd>dn42.tbspace.de</dd>
+							<dd>Switzerland</dd>
+							<dt>Remote (IPv4)</dt>
+							<dd>dn42.kilobyte.ch</dd>
 							<dt>AS</dt>
-							<dd>76190</dd>
+							<dd>4242421243</dd>
 							<dt>BGP Endpoint (v4)</dt>
-							<dd>172.23.235.1</dd>
+							<dd>172.23.100.161</dd>
 							<dt>BGP Endpoint (v6)</dt>
-							<dd>fe80::1299:e</dd>
+							<dd>fe80::11:32ff:fe27:5393/64</dd>
 							<dt>Peering Type</dt>
-							<dd>OpenVPN, IPSec/GRE</dd>
+							<dd>Wireguard</dd>
 						</dl>
 						<!--<figure class="highlight"><pre><code class="language-text" data-lang="text">dfg</code></pre></figure>-->
 					</div>
