@@ -1,7 +1,7 @@
 <?php 
-include("config.php");
+$config = include("config.php");
 
-if ($_GET['key'] != "keyhier")
+if ($_GET['key'] != $config['key'])
 	die();
 
 $birdProtocols = file_get_contents($_FILES['upload']['tmp_name']);
