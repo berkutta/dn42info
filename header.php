@@ -3,6 +3,7 @@
 <head>
 	<title>kilobyte.dn42</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/dn42info.css"/>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-static-top" role="navigation">
