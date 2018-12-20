@@ -1,3 +1,6 @@
+<?php
+	$config = include("config.php");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,7 +17,11 @@
 			<ul class="nav navbar-nav">
 				<li <?php echo (basename($_SERVER["SCRIPT_FILENAME"], ".php") == "index" ? 'class="active"' : ''); ?>><a href="/">Home</a></li>
 				<li <?php echo (basename($_SERVER["SCRIPT_FILENAME"], ".php") == "peers" ? 'class="active"' : ''); ?>><a href="/peers.php">Peers</a></li>
-				<li <?php echo (basename($_SERVER["SCRIPT_FILENAME"], ".php") == "tunnels" ? 'class="active"' : ''); ?>><a href="/tunnels.php">Tunnels</a></li>
+				<?php
+				if($config['wireguard'] == true) {
+					echo("<li ". (basename($_SERVER["SCRIPT_FILENAME"], ".php") == "tunnels" ? 'class="active"' : '') ."><a href=\"/tunnels.php\">Tunnels</a></li>");
+				}
+				?>
 			</ul>
 		</div>
 	</nav>
