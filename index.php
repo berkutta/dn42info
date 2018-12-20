@@ -1,5 +1,5 @@
 <?php
-	include("config.php");
+	$config = include("config.php");
 	include("header.php");
 ?>
 		<div class="row">
@@ -8,10 +8,11 @@
 					<div class="panel-heading">Contact Information</div>
 					<div class="panel-body">
 						<dl>
-							<dt>E-Mail</dt>
-							<dd>info@kilobyte.ch</dd>
-							<dt>IRC</dt>
-							<dd>kilobyte@hackint</dd>
+							<?php
+							foreach($config['contact_info'] as $info) {
+								echo("<dt>".$info['name']."</dt><dd>".$info['value']."</dd>");
+							}
+							?>
 						</dl>
 						<br/><br/>
 					</div>
@@ -22,18 +23,11 @@
 					<div class="panel-heading">Peering Information</div>
 					<div class="panel-body">
 						<dl>
-							<dt>Location</dt>
-							<dd>Switzerland</dd>
-							<dt>Remote (IPv4)</dt>
-							<dd>dn42.kilobyte.ch</dd>
-							<dt>AS</dt>
-							<dd>4242421243</dd>
-							<dt>BGP Endpoint (v4)</dt>
-							<dd>172.23.100.161</dd>
-							<dt>BGP Endpoint (v6)</dt>
-							<dd>fe80::11:32ff:fe27:5393/64</dd>
-							<dt>Peering Type</dt>
-							<dd>Wireguard</dd>
+						<?php
+							foreach($config['peering_info'] as $info) {
+								echo("<dt>".$info['name']."</dt><dd>".$info['value']."</dd>");
+							}
+							?>
 						</dl>
 						<!--<figure class="highlight"><pre><code class="language-text" data-lang="text">dfg</code></pre></figure>-->
 					</div>
